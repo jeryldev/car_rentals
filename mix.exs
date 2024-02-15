@@ -28,7 +28,7 @@ defmodule CarRentals.MixProject do
   def application do
     [
       mod: {CarRentals.Application, []},
-      extra_applications: [:logger, :wx, :observer, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools]
     ]
   end
 
