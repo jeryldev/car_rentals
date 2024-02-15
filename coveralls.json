@@ -1,6 +1,7 @@
 {
   "skip_files": [
     "lib/car_rentals/application.ex",
+    "lib/car_rentals/release.ex",
     "lib/car_rentals_web.ex",
     "lib/car_rentals_web/telemetry.ex",
     "lib/car_rentals_web/router.ex",
