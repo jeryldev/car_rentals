@@ -4,7 +4,6 @@
     "lib/car_rentals/release.ex",
     "lib/car_rentals_web.ex",
     "lib/car_rentals_web/telemetry.ex",
-    "lib/car_rentals_web/router.ex",
     "lib/car_rentals_web/views/error_helpers.ex",
     "lib/car_rentals_web/components/core_components.ex",
     "test/support/data_case.ex"
