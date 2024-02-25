@@ -21,9 +21,11 @@ defmodule CarRentalsWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", CarRentalsWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", CarRentalsWeb do
+    pipe_through :api
+
+    get "/categories", API.CategoryController, :index
+  end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
   if Application.compile_env(:car_rentals, :dev_routes) do
