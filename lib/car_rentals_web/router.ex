@@ -24,7 +24,7 @@ defmodule CarRentalsWeb.Router do
   scope "/api", CarRentalsWeb do
     pipe_through :api
 
-    get "/categories", API.CategoryController, :index
+    resources "/categories", CategoryController, except: [:new, :edit]
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
