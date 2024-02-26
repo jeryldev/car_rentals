@@ -14,6 +14,8 @@ defmodule CarRentalsWeb.FallbackController do
     |> render(:error, changeset: changeset)
   end
 
+  # coveralls-ignore-start
+
   # This clause is an example of how to handle resources that cannot be found.
   def call(conn, {:error, :not_found}) do
     conn
@@ -21,4 +23,6 @@ defmodule CarRentalsWeb.FallbackController do
     |> put_view(html: CarRentalsWeb.ErrorHTML, json: CarRentalsWeb.ErrorJSON)
     |> render(:"404")
   end
+
+  # coveralls-ignore-end
 end
